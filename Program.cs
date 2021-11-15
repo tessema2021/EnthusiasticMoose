@@ -1,15 +1,26 @@
 ﻿using System;
 
-Console.WriteLine("Welcome to the Enthusiastic Moose Simulator!");
-Console.WriteLine("you are ");
-Console.WriteLine("yes");
 
 
-void MooseSays()
+void MooseSays(string message)
 {
-    Console.WriteLine(@"
+    Console.WriteLine("Welcome to the Enthusiastic Moose Simulator!");
+    Console.WriteLine("H I, I'M  E N T H U S I A S T I C !");
+    Console.WriteLine("I really am enthusiastic");
+
+ 
+
+
+
+    Console.WriteLine($@"
+    
+                                
+
+
+
     
                                        _.--^^^--,
+
                                     .'          `\
   .-^^^^^^-.                      .'              |
  /          '.                   /            .-._/
@@ -25,7 +36,11 @@ void MooseSays()
                '-'    | /       \ |
                       |  .-. .-.  |
                       \ / o| |o \ /
+
+                       |   / \   |    {message}
+
                        |   / \   |    H I, I'M  E N T H U S I A S T I C !
+
                       / `^`   `^` \
                      /             \
                     | '._.'         \
@@ -36,5 +51,8 @@ void MooseSays()
                       \ \'._  ` '_.'
                        `^^` `^^^`
     ");
-    MooseSays();
+
 }
+MooseSays("the messeage");
+
+
