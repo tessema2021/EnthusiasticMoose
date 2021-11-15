@@ -1,5 +1,6 @@
 ﻿using System;
 
+
 bool MooseAsks(string question)
 
 {
@@ -23,4 +24,6 @@ bool MooseAsks(string question)
 }
 bool isTrue = MooseAsks("Is Canada real?");
 Console.WriteLine(isTrue);
+
+
 
