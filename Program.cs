@@ -31,12 +31,22 @@ void MooseSays(string message)
     ");
 }
 
+
+
+
+
 bool MooseAsks(string question)
+
 {
     Console.Write($"{question} (Y/N): ");
     string answer = Console.ReadLine().ToLower();
 
     while (answer != "y" && answer != "n")
+
+    {
+        Console.Write($"{question} (Y/N): ");
+        answer = Console.ReadLine().ToLower();
+
     {
         Console.Write($"{question} (Y/N): ");
         answer = Console.ReadLine().ToLower();
@@ -49,7 +59,10 @@ bool MooseAsks(string question)
     else
     {
         return false;
+
     }
+
+   
 
 }
 
@@ -62,6 +75,8 @@ else
 {
     MooseSays("I  K N E W  I T !!!");
 }
+
+
 
 
 
