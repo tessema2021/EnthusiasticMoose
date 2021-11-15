@@ -1,4 +1,38 @@
 ﻿using System;
+void MooseSays(string message)
+{
+    Console.WriteLine($@"
+                                      _.--^^^--,
+                                    .'          `\
+  .-^^^^^^-.                      .'              |
+ /          '.                   /            .-._/
+|             `.                |             |
+ \              \          .-._ |          _   \
+  `^^'-.         \_.-.     \   `          ( \__/
+        |             )     '=.       .,   \
+       /             (         \     /  \  /
+     /`               `\        |   /    `'
+     '..-`\        _.-. `\ _.__/   .=.
+          |  _    / \  '.-`    `-.'  /
+          \_/ |  |   './ _     _  \.'
+               '-'    | /       \ |
+                      |  .-. .-.  |
+                      \ / o| |o \ /
+                       |   / \   |    {message}
+                      / `^`   `^` \
+                     /             \
+                    | '._.'         \
+                    |  /             |
+                     \ |             |
+                      ||    _    _   /
+                      /|\  (_\  /_) /
+                      \ \'._  ` '_.'
+                       `^^` `^^^`
+    ");
+}
+
+
+
 
 
 bool MooseAsks(string question)
@@ -8,6 +42,11 @@ bool MooseAsks(string question)
     string answer = Console.ReadLine().ToLower();
 
     while (answer != "y" && answer != "n")
+
+    {
+        Console.Write($"{question} (Y/N): ");
+        answer = Console.ReadLine().ToLower();
+
     {
         Console.Write($"{question} (Y/N): ");
         answer = Console.ReadLine().ToLower();
@@ -20,10 +59,33 @@ bool MooseAsks(string question)
     else
     {
         return false;
+
     }
+
+   
+
 }
+
 bool isTrue = MooseAsks("Is Canada real?");
-Console.WriteLine(isTrue);
+if (isTrue)
+{
+    MooseSays("Really? It seems very unlikely.");
+}
+else
+{
+    MooseSays("I  K N E W  I T !!!");
+}
+
+
+
+
+
+
+
+
+
+
+
 
 
 
