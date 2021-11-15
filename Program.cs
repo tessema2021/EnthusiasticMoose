@@ -1,12 +1,26 @@
 ﻿using System;
 
-namespace EnthusiasticMoose
+bool MooseAsks(string question)
+
 {
-    class Program
+    Console.Write($"{question} (Y/N): ");
+    string answer = Console.ReadLine().ToLower();
+
+    while (answer != "y" && answer != "n")
     {
-        static void Main(string[] args)
-        {
-            Console.WriteLine("Welcome to the Enthusiastic Moose Simulator!");
-        }
+        Console.Write($"{question} (Y/N): ");
+        answer = Console.ReadLine().ToLower();
+    }
+
+    if (answer == "y")
+    {
+        return true;
+    }
+    else
+    {
+        return false;
     }
 }
+bool isTrue = MooseAsks("Is Canada real?");
+Console.WriteLine(isTrue);
+
