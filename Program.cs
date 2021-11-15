@@ -1,4 +1,5 @@
 ﻿using System;
+
 Console.WriteLine("Welcome to the Enthusiastic Moose Simulator!");
 Console.WriteLine("How you doin?");
 Console.WriteLine("working");
@@ -119,3 +120,20 @@ void Main()
     SecretQuestion();
 }
 Main();
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
